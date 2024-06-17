@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="goit-markup-hw-01">
-    <title>First project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webstudio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
@@ -40,10 +40,82 @@
 
             <address class="contacts">
                 <ul class="contacts_block">
-                    <li><a href="mailto:info@devstudio.com" class="contacts_link">info@devstudio.com</a></li>
-                    <li><a href="tel:+110001111111" class="contacts_link">+11 (000) 111-11-11</a></li>
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="contacts_link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+110001111111" class="contacts_link">+11 (000) 111-11-11</a>
+                    </li>
                 </ul>
             </address>
+            <button type="button" class="menu_open_btn">
+                <svg class="menu_open_icon" width="18" height="16">
+                    <use href="./images/icons.svg#icon-Group"></use>
+                </svg>
+            </button>
+        </div>
+        <!--mob menu-->
+        <div class="mob_menu">
+            <div class="mob_menu_div">
+                <button type="button" class="menu_close_btn">
+                    <svg class="menu_close_icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <nav class="mob_nav">
+                    <ul class="mob_nav_list">
+                        <li class="mob_nav_item">
+                            <a href="./index.html" class="mob_menu_nav">Studio</a>
+                        </li>
+                        <li class="mob_nav_item">
+                            <a href="" class="mob_menu_nav">Portfolio</a>
+                        </li>
+                        <li class="mob_nav_item">
+                            <a href="" class="mob_menu_nav">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mob_social_div">
+                <address class="mob_contacts">
+                    <ul class="mob_contacts_block">
+                        <li><a href="mailto:info@devstudio.com" class="mob_contacts_link">info@devstudio.com</a></li>
+                        <li><a href="tel:+110001111111" class="mob_contacts_link">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+
+                <ul class="mob_media">
+                    <li class="mob_list">
+                        <a href="" class="mob_link">
+                            <svg class="mob_icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob_list">
+                        <a href="" class="mob_link">
+                            <svg class="mob_icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob_list">
+                        <a href="" class="mob_link">
+                            <svg class="mob_icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob_list">
+                        <a href="" class="mob_link">
+                            <svg class="mob_icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -117,7 +189,7 @@
         </section>
 
         <!--section3-->
-        <section class="team_block">
+        <!-- <section class="team_block">
             <div class="container team_block_container">
                 <h2 class="team_block_head">Our Team</h2>
                 <ul class="team_block_list">
@@ -274,10 +346,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--section4-->
-        <section class="portfolio_block">
+        <!-- <section class="portfolio_block">
             <div class="container portfolio_block_container">
                 <h2 class="portfolio_block_head">Our Portfolio</h2>
                 <ul class="portfolio_block_list">
@@ -379,11 +451,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!--footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer_container">
             <div class="footer_box">
                 <a href="./index.html" class="logo-end">Web<span class="logo_color_end">Studio</span></a>
@@ -441,7 +513,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!--modal-->
     <div class="backdrop is_open">
@@ -494,7 +566,10 @@
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the <a href="" class="modal_link">Privacy Policy</a>
+                        <span class="text_span">
+                            I accept the terms and conditions of the <a href="" class="modal_link">Privacy
+                                Policy</a>
+                        </span>
                     </label>
                 </div>
                 <button type="submit" class="modal_form_btn">Send</button>
