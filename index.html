@@ -189,12 +189,13 @@
         </section>
 
         <!--section3-->
-        <!-- <section class="team_block">
+        <section class="team_block">
             <div class="container team_block_container">
                 <h2 class="team_block_head">Our Team</h2>
                 <ul class="team_block_list">
                     <li class="team_group">
-                        <img class="team_img" src="./images/1.jpg" alt="Mark" width=264 height=260>
+                        <img class="team_img" srcset="./images/1.jpg 1x, ./images/1-2x.jpg 2x" src="./images/1.jpg"
+                            alt="Mark" width=264 height=260>
                         <div class="team_name_container">
                             <h3 class="team_name">Mark Guerrero</h3>
                             <p class="team_title">Product Designer</p>
@@ -232,7 +233,8 @@
                     </li>
 
                     <li class="team_group">
-                        <img class="team_img" src="./images/2.jpg" alt="Tom" width=264 height=260>
+                        <img class="team_img" srcset="./images/2.jpg 1x, ./images/2-2x.jpg 2x" src="./images/2.jpg"
+                            alt="Tom" width=264 height=260>
                         <div class="team_name_container">
                             <h3 class="team_name">Tom Ford</h3>
                             <p class="team_title">Frontend Developer</p>
@@ -270,7 +272,8 @@
                     </li>
 
                     <li class="team_group">
-                        <img class="team_img" src="./images/3.jpg" alt="Camila" width=264 height=260>
+                        <img class="team_img" srcset="./images/3.jpg 1x, ./images/3-2x.jpg 2x" src="./images/3.jpg"
+                            alt="Camila" width=264 height=260>
                         <div class="team_name_container">
                             <h3 class="team_name">Camila Garcia</h3>
                             <p class="team_title">Marketing</p>
@@ -308,7 +311,8 @@
                     </li>
 
                     <li class="team_group">
-                        <img class="team_img" src="./images/4.jpg" alt="Daniel" width=264 height=260>
+                        <img class="team_img" srcset="./images/4.jpg 1x, ./images/4-2x.jpg 2x" src="./images/4.jpg"
+                            alt="Daniel" width=264 height=260>
                         <div class="team_name_container">
                             <h3 class="team_name">Daniel Wilson</h3>
                             <p class="team_title">UI Designer</p>
@@ -346,17 +350,31 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!--section4-->
-        <!-- <section class="portfolio_block">
+        <section class="portfolio_block">
             <div class="container portfolio_block_container">
                 <h2 class="portfolio_block_head">Our Portfolio</h2>
                 <ul class="portfolio_block_list">
                     <li class="portfolio_block_group">
                         <div class="portfolio_cover">
-                            <img class="portfolio_block_img" src="./images/5.jpg" alt="Banking App" width=360
-                                height=300>
+                            <picture class="portfolio_img">
+                                <source srcset="
+                        ./images/5.jpg 1x,
+                        ./images/5-2x.jpg 2x
+                    " media="(min-width: 1158px)" />
+                                <source srcset="
+                        ./images/5-tab.jpg 1x,
+                        ./images/5-tab-2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                                <source srcset="
+                        ./images/5-mob.jpg 1x,
+                        ./images/5-mob-2x.jpg 2x
+                    " media="(min-width: 320px)" />
+                                <img class="portfolio_block_img" src="./images/5.jpg" alt="Banking App" width=360
+                                    height=300>
+                            </picture>
                             <p class="portfolio_description">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App
@@ -371,8 +389,22 @@
 
                     <li class="portfolio_block_group">
                         <div class="portfolio_cover">
-                            <img class="portfolio_block_img" src="./images/6.jpg" alt="Cashless Payment" width=360
-                                height=300>
+                            <picture class="portfolio_img">
+                                <source srcset="
+                        ./images/6.jpg 1x,
+                        ./images/6-2x.jpg 2x
+                    " media="(min-width: 1158px)" />
+                                <source srcset="
+                        ./images/6-tab.jpg 1x,
+                        ./images/6-tab-2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                                <source srcset="
+                        ./images/6-mob.jpg 1x,
+                        ./images/6-mob-2x.jpg 2x
+                    " media="(min-width: 320px)" />
+                                <img class="portfolio_block_img" src="./images/6.jpg" alt="Cashless Payment" width=360
+                                    height=300>
+                            </picture>
                             <p class="portfolio_description">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App
                                 ·
@@ -388,8 +420,22 @@
 
                     <li class="portfolio_block_group">
                         <div class="portfolio_cover">
-                            <img class="portfolio_block_img" src="./images/7.jpg" alt="Meditation App" width=360
-                                height=300>
+                            <picture class="portfolio_img">
+                                <source srcset="
+                        ./images/7.jpg 1x,
+                        ./images/7-2x.jpg 2x
+                    " media="(min-width: 1158px)" />
+                                <source srcset="
+                        ./images/7-tab.jpg 1x,
+                        ./images/7-tab-2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                                <source srcset="
+                        ./images/7-mob.jpg 1x,
+                        ./images/7-mob-2x.jpg 2x
+                    " media="(min-width: 320px)" />
+                                <img class="portfolio_block_img" src="./images/7.jpg" alt="Meditation App" width=360
+                                    height=300>
+                            </picture>
                             <p class="portfolio_description">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App
                                 · Calorie Tracker App
@@ -404,8 +450,22 @@
 
                     <li class="portfolio_block_group">
                         <div class="portfolio_cover">
-                            <img class="portfolio_block_img" src="./images/8.jpg" alt="Taxi Service" width=360
-                                height=300>
+                            <picture class="portfolio_img">
+                                <source srcset="
+                        ./images/8.jpg 1x,
+                        ./images/8-2x.jpg 2x
+                    " media="(min-width: 1158px)" />
+                                <source srcset="
+                        ./images/8-tab.jpg 1x,
+                        ./images/8-tab-2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                                <source srcset="
+                        ./images/8-mob.jpg 1x,
+                        ./images/8-mob-2x.jpg 2x
+                    " media="(min-width: 320px)" />
+                                <img class="portfolio_block_img" src="./images/8.jpg" alt="Taxi Service" width=360
+                                    height=300>
+                            </picture>
                             <p class="portfolio_description">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App
                                 · Calorie Tracker App
@@ -420,8 +480,22 @@
 
                     <li class="portfolio_block_group">
                         <div class="portfolio_cover">
-                            <img class="portfolio_block_img" src="./images/9.jpg" alt="Screen Illustrations" width=360
-                                height=300>
+                            <picture class="portfolio_img">
+                                <source srcset="
+                        ./images/9.jpg 1x,
+                        ./images/9-2x.jpg 2x
+                    " media="(min-width: 1158px)" />
+                                <source srcset="
+                        ./images/9-tab.jpg 1x,
+                        ./images/9-tab-2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                                <source srcset="
+                        ./images/9-mob.jpg 1x,
+                        ./images/9-mob-2x.jpg 2x
+                    " media="(min-width: 320px)" />
+                                <img class="portfolio_block_img" src="./images/9.jpg" alt="Screen Illustrations"
+                                    width=360 height=300>
+                            </picture>
                             <p class="portfolio_description">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App
                                 · Calorie Tracker App
@@ -436,8 +510,23 @@
 
                     <li class="portfolio_block_group">
                         <div class="portfolio_cover">
-                            <img class="portfolio_block_img" src="./images/10.jpg" alt="Online Courses" width=360
-                                height=300>
+                            <picture class="portfolio_img">
+                                <source srcset="
+                        ./images/10.jpg 1x,
+                        ./images/10-2x.jpg 2x
+                    " media="(min-width: 1158px)" />
+                                <source srcset="
+                        ./images/10-tab.jpg 1x,
+                        ./images/10-tab-2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                                <source srcset="
+                        ./images/10-mob.jpg 1x,
+                        ./images/10-mob-2x.jpg 2x
+                    " media="(min-width: 320px)" />
+                                <img class="portfolio_block_img" src="./images/10.jpg" alt="Online Courses" width=360
+                                    height=300>
+                            </picture>
+
                             <p class="portfolio_description">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App
                                 · Calorie Tracker App
@@ -451,7 +540,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!--footer-->
@@ -516,7 +605,7 @@
     </footer> -->
 
     <!--modal-->
-    <div class="backdrop is_open">
+    <div class="backdrop">
         <div class="modal">
             <button type="button" class="modal_close_btn">
                 <svg class="modal_close_icon" width="8" height="8">
