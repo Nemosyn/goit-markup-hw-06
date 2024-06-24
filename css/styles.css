@@ -206,8 +206,6 @@ ul {
   display: flex;
   gap: 40px;
 }
-.mob_list {
-}
 .mob_link {
   display: flex;
   justify-content: center;
