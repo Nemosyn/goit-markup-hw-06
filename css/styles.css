@@ -932,7 +932,7 @@ ul {
     padding: 96px 0;
   }
   .footer_container {
-    padding-left: 108px;
+    width: 584px;
   }
   .first_footer_box {
     display: flex;
